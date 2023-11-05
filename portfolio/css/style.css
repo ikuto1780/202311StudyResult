@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+/* common */
+/* ユーザーエージェントのスタイルで生まれた余白をリセット */
+body {
+  /* body全体の余白をリセっと */
+  margin: 0;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+.wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px 4%;
+}
+
+/* header */
+header {
+  text-align: center;
+}
+
+.photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* main */
+h2 {
+  text-align: center;
+}
+
+.myskills {
+  background-color: #f1f1f1;
+}
+
+.myskills ul {
+  margin-top: 30px;
+  /* リストの●を無くす */
+  list-style: none;
+  padding: 0;
+  /* その直下の要素が横並びになる */
+  display: flex;
+  /* 余白を持って等間隔で配置される */
+  justify-content: space-around;
+}
+
+.skill_html5 {
+  background-color: #e44d26;
+}
+
+.skill_css3 {
+  background-color: #1572b6;
+}
+
+.skill_javascript {
+  background-color: #ebbc00;
+}
+
+.skill_python {
+  background-color: green;
+}
+
+.skill_c {
+  background-color: purple;
+}
+
+.myskills ul li {
+  width: 90px;
+  height: 90px;
+  /* 角丸を指定して円にする */
+  border-radius: 50%;
+  /* flexboxの指定をする */
+  display: flex;
+  /* 縦方向を中央ぞろえ */
+  justify-content: center;
+  /* 横方向を中央ぞろえ */
+  align-items: center;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.works_box {
+  max-width: 450px;
+  margin: 40px auto;
+}
+
+.works_img {
+  /* 横幅は親要素に合わせる */
+  width: 100%;
+  /* 縦要素はコンテンツに合わせる */
+  height: auto;
+}
+
+.works_box h3 {
+  margin-top: 10px;
+}
+
+.works_box p {
+  margin-top: 7px;
+}
+
+/* footer */
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+}
